@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">NeuroLens</string>
+    <string name="app_tagline">Your Cognitive Companion</string>
+
+    <!-- Navigation -->
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">NeuroLens</string>
+    <string name="nav_header_subtitle">Empowering Neurodiversity</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- Modules -->
+    <string name="menu_context_coach">Context Coach</string>
+    <string name="menu_prompt_rewriter">Prompt Rewriter</string>
+    <string name="menu_focus_bubble">Focus Bubble</string>
+    <string name="menu_visual_reader">Visual Reader</string>
+    <string name="menu_emotion_mirror">Emotion Mirror</string>
+    <string name="menu_insight_journal">Insight Journal</string>
+    <string name="menu_settings">Settings</string>
+
+    <!-- Legacy navigation (to be replaced) -->
+    <string name="menu_transform">Transform</string>
+    <string name="menu_reflow">Reflow</string>
+    <string name="menu_slideshow">Slideshow</string>
+
+    <string name="lorem_ipsum_title">Lorem Ipsum"</string>
+    <string name="lorem_ipsum">Lorem Ipsum is simply placeholder text of the printing and
+        typesetting industry. Lorem Ipsum has been the industry\'s standard placeholder text ever
+        since the 1500s, when an unknown printer took a galley of type and scrambled it to make a
+        type specimen book"
+    </string>
+    <string name="fab_content_description">Represents a view to invoke an action</string>
+    <string name="image_view_item_transform_content_description">Represents an image view in the
+        item
+    </string>
+</resources>

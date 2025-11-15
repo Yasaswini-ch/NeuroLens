@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+   Backup rules for Android 11 and below (API 30 and below)
+   Controls Auto Backup for older Android versions.
+   See https://developer.android.com/guide/topics/data/autobackup
+   for details.
+   Note: This file is ignored for devices on API 31+
+   See https://developer.android.com/about/versions/12/backup-restore
+-->
+<full-backup-content>
+    <!-- Include all shared preferences -->
+    <include
+        domain="sharedpref"
+        path="." />
+
+    <!-- Exclude device-specific settings from shared preferences -->
+    <exclude
+        domain="sharedpref"
+        path="device_specific.xml" />
+
+    <!-- Include DataStore preferences -->
+    <include
+        domain="file"
+        path="datastore/" />
+
+    <!-- Include journal entries and user data -->
+    <include
+        domain="file"
+        path="journal/" />
+    <include
+        domain="file"
+        path="focus_sessions/" />
+    <include
+        domain="file"
+        path="insights/" />
+</full-backup-content>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+   Data extraction rules for Android 12+ (API 31+)
+   Controls what data is backed up to the cloud and transferred between devices.
+   See https://developer.android.com/about/versions/12/backup-restore#xml-changes
+   for details.
+-->
+<data-extraction-rules>
+    <cloud-backup>
+        <!-- Include user preferences and settings -->
+        <include
+            domain="sharedpref"
+            path="." />
+
+        <!-- Exclude device-specific settings from shared preferences -->
+        <exclude
+            domain="sharedpref"
+            path="device_specific.xml" />
+
+        <!-- Include DataStore preferences -->
+        <include
+            domain="file"
+            path="datastore/" />
+
+        <!-- Include journal entries and user data -->
+        <include
+            domain="file"
+            path="journal/" />
+        <include
+            domain="file"
+            path="focus_sessions/" />
+        <include
+            domain="file"
+            path="insights/" />
+    </cloud-backup>
+
+    <device-transfer>
+        <!-- Include all user data for device-to-device transfer -->
+        <include
+            domain="sharedpref"
+            path="." />
+
+        <!-- Exclude device-specific settings from shared preferences -->
+        <exclude
+            domain="sharedpref"
+            path="device_specific.xml" />
+
+        <include
+            domain="file"
+            path="datastore/" />
+        <include
+            domain="file"
+            path="journal/" />
+        <include
+            domain="file"
+            path="focus_sessions/" />
+        <include
+            domain="file"
+            path="insights/" />
+    </device-transfer>
+</data-extraction-rules>
