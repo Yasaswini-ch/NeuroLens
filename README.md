@@ -1,6 +1,9 @@
 # NeuroLens – An Offline Cognitive Companion for Neurodiverse Users
 
-![NeuroLens Logo](docs/logo.png)
+![Android](https://img.shields.io/badge/Android-7.0%2B-green)
+![Kotlin](https://img.shields.io/badge/Kotlin-2.0.21-blue)
+![License](https://img.shields.io/badge/License-MIT-yellow)
+![Platform](https://img.shields.io/badge/Platform-Android-brightgreen)
 
 **Tagline:** *Empowering Neurodiversity, One Interaction at a Time*
 
